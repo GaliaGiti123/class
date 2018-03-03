@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Work</title>
+	
+</head>
+
+<body>
+	<p>Enter a number and click OK:</p>
+
+<input id="id1" type="number" max="100">
+<button onclick="myFunction()">OK</button>
+
+<p>If the number is greater than 100, an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too large";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<div>
+	<p>Enter a phone number that is eleventh character long</p>
+	<input id="id1" type = "number" max="11">
+	<button onclick="Function()">OK</button>
+</div>
+<script>
+function Function() {
+    var txt = "";
+    if (document.getElementById("id1").validity.rangeOverflow) {
+        txt = "Value too large";
+    } else {
+        txt = "Input OK";
+    } 
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+<div>
+	
+   <form action="https://www.w3schools.com/js/default.asp" method= "Post">
+	<label for= "firstName" >First Name</label>
+	<input id ="firstName" type="text" name="person" required>
+	<label for = "lastName">Last Name</label>
+	<input type="text" name="person" required>
+	<div>
+	<label for = "gender">Male</label>
+	
+	<input id = "gender" type="radio" name="button" required>
+	<label for = gender>Female</label>
+	<input id = "gender" type="radio" name="button" required>
+	<label for = gender>Others</label>
+	<input id = "gender" type="radio" name="button" required>
+	</div>
+	<div>	
+	<label for = "email" >Email</label>
+	<input type="text" name="email" placeholder="your email" required>
+	<label for = "pass">Password</label>
+	<input type="pass" name="password" pattern=".{5,10}" required title="Password 5 thekey 10 okkhorer hote hobe">
+	</div>
+	
+	
+	<div>
+		<label for= "checkBox">I agree to the terms and condition</label>
+		<input type="checkbox" name="checkBox" required>
+		<input type="Submit" name="submit">
+	</div>
+
+	
+
+
+
+
+</body>
+</html>
